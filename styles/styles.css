@@ -19,3 +19,25 @@ body {
 .main-header {
   margin-top: 1rem;
 }
+
+.container .sign {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.container .sign h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-title);
+}
+
+.container p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-base);
+  margin-top: 0.5rem;
+}
