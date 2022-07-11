@@ -18,7 +18,7 @@
       <header class="main-header">
         <img src="./img/logo.svg" alt="Logo" />
         <label class="switch">
-          <input type="checkbox" />
+          <input class="toggle" type="checkbox" onchange="toggleTheme()" />
           <span class="slider round"></span>
         </label>
       </header>
@@ -26,39 +26,39 @@
         <main class="container">
           <div class="sign">
             <img src="./img/log-in.svg" alt="Porta" />
-            <h1>Faça seu login</h1>
+            <h1 class="text-title">Faça seu login</h1>
           </div>
-          <p>Entre com suas informações de cadastro</p>
+          <p class="text">Entre com suas informações de cadastro</p>
           <form>
             <div class="email">
-              <p>E-mail</p>
+              <p class="text">E-mail</p>
               <input type="text" placeholder="Digite seu e-mail" />
             </div>
             <div class="password">
-              <p>Senha</p>
+              <p class="text">Senha</p>
               <input type="password" placeholder="Digite sua senha" />
             </div>
             <div class="password-infos">
               <div>
-                <label class="check"
+                <label class="check text"
                   >Lembre-me
                   <input type="checkbox" checked="checked" />
                   <span class="checkmark"></span>
                 </label>
               </div>
               <div>
-                <a href="#">Esqueci minha senha</a>
+                <a class="otherColor" href="#">Esqueci minha senha</a>
               </div>
             </div>
-            <button type="submit">Entrar</button>
-            <p class="primary-color-p">
-              Não tem uma conta? <a href="#">Registre-se</a>
+            <button class="text" type="submit">Entrar</button>
+            <p class="primary-color-p otherColor">
+              Não tem uma conta? <a class="otherColor" href="#">Registre-se</a>
             </p>
           </form>
         </main>
       </section>
     </aside>
     <div class="background"></div>
-    <script src="js/scripts.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
