@@ -8,16 +8,27 @@
 
 body {
   background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.container {
-  max-width: 738px;
+html {
+  height: 100%;
+}
+
+.content {
+  max-width: 768px;
   padding: 0 30px;
   margin: 0 auto;
 }
 
 .main-header {
   margin: 1.75rem 0;
+}
+
+.main-header {
+  margin-left: 30px;
 }
 
 .container .sign {
@@ -199,4 +210,32 @@ body {
 .container .primary-color-p a {
   font-weight: 600;
   color: var(--primary-color);
+}
+
+@media only screen and (min-width: 1080px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    background-color: var(--form-background);
+    padding: 4rem;
+    border-radius: 8px;
+  }
+
+  aside {
+    width: 50%;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 75%;
+  }
+
+  .background {
+    width: 50%;
+    background: url("../img/side-image.jpg");
+    background-size: cover;
+  }
 }

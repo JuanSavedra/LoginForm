@@ -14,42 +14,47 @@
     <title>Login Form</title>
   </head>
   <body>
-    <header class="container main-header">
-      <img src="./img/logo.svg" alt="Logo" />
-    </header>
-    <main class="container">
-      <div class="sign">
-        <img src="./img/log-in.svg" alt="Porta" />
-        <h1>Faça seu login</h1>
-      </div>
-      <p>Entre com suas informações de cadastro</p>
-      <form>
-        <div class="email">
-          <p>E-mail</p>
-          <input type="text" placeholder="Digite seu e-mail" />
-        </div>
-        <div class="password">
-          <p>Senha</p>
-          <input type="password" placeholder="Digite sua senha" />
-        </div>
-        <div class="password-infos">
-          <div>
-            <label class="check"
-              >Lembre-me
-              <input type="checkbox" checked="checked" />
-              <span class="checkmark"></span>
-            </label>
+    <aside>
+      <header class="main-header">
+        <img src="./img/logo.svg" alt="Logo" />
+      </header>
+      <section class="content">
+        <main class="container">
+          <div class="sign">
+            <img src="./img/log-in.svg" alt="Porta" />
+            <h1>Faça seu login</h1>
           </div>
-          <div>
-            <a href="#">Esqueci minha senha</a>
-          </div>
-        </div>
-        <button type="submit">Entrar</button>
-        <p class="primary-color-p">
-          Não tem uma conta? <a href="#">Registre-se</a>
-        </p>
-      </form>
-    </main>
+          <p>Entre com suas informações de cadastro</p>
+          <form>
+            <div class="email">
+              <p>E-mail</p>
+              <input type="text" placeholder="Digite seu e-mail" />
+            </div>
+            <div class="password">
+              <p>Senha</p>
+              <input type="password" placeholder="Digite sua senha" />
+            </div>
+            <div class="password-infos">
+              <div>
+                <label class="check"
+                  >Lembre-me
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div>
+                <a href="#">Esqueci minha senha</a>
+              </div>
+            </div>
+            <button type="submit">Entrar</button>
+            <p class="primary-color-p">
+              Não tem uma conta? <a href="#">Registre-se</a>
+            </p>
+          </form>
+        </main>
+      </section>
+    </aside>
+    <div class="background"></div>
     <script src="js/scripts.js"></script>
   </body>
 </html>
