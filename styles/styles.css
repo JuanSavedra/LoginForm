@@ -17,7 +17,7 @@ body {
 }
 
 .main-header {
-  margin-top: 1rem;
+  margin: 1.75rem 0;
 }
 
 .container .sign {
@@ -40,4 +40,130 @@ body {
   font-weight: 400;
   color: var(--text-base);
   margin-top: 0.5rem;
+}
+
+.container form .email,
+.container form .password {
+  margin-top: 1.25rem;
+}
+
+.container form .email input {
+  background: url("../img/mail.svg") no-repeat scroll 7px 7px;
+}
+
+.container form .password input {
+  background: url("../img/lock.svg") no-repeat scroll 7px 7px;
+}
+
+.container form .email input,
+.container form .password input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid var(--text-base);
+  font-size: 0.875rem;
+  color: var(--text-base);
+  text-align: center;
+}
+
+.container form .email input:focus {
+  background: url("../img/mail-focus.svg") no-repeat scroll 7px 7px;
+}
+
+.container form .password input:focus {
+  background: url("../img/lock-focus.svg") no-repeat scroll 7px 7px;
+}
+
+.container form .email input:focus,
+.container form .password input:focus {
+  border: 2px solid var(--primary-color);
+}
+
+.container form .email p,
+.container form .password p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-base);
+}
+
+.password-infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.password-infos div .check {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: var(--text-base);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.password-infos div .check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.password-infos div .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border: 1px solid var(--text-base);
+  border-radius: 2px;
+}
+
+.password-infos div .check:hover input ~ .checkmark {
+  background-color: rgb(51, 50, 50);
+}
+
+.password-infos div .check input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+  border: 0;
+}
+
+.password-infos div .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.password-infos div .check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.password-infos div .check .checkmark:after {
+  left: 4px;
+  bottom: 4px;
+  width: 4px;
+  height: 8px;
+  border: solid var(--form-background);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.password-infos div .password-infos div span {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-base);
 }
