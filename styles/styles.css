@@ -5,3 +5,17 @@
   --form-background: #24221f;
   --primary-color: #ffc632;
 }
+
+body {
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 738px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.main-header {
+  margin-top: 1rem;
+}
