@@ -305,4 +305,11 @@ input:checked + .slider:before {
     background-size: cover;
     transition: background 1s;
   }
+
+  .password-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
 }
