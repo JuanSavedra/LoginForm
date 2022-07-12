@@ -9,8 +9,8 @@
 ## Nela contém: 
 - ✔️ Switcher de tema.
 - ✔️ Responsividade.
-- ✔️ Funcionalidades Javascript.
-- ✔️ Formulário
+- ✔️ Salvamento de dados do formulário.
+- ✔️ Botão para exibir senha.
 
 ## Imagens da aplicação
 ![Screenshot_1](https://user-images.githubusercontent.com/66082393/178367019-b312ac65-8187-4ca6-bcad-fc8ff8dd04c0.png)
