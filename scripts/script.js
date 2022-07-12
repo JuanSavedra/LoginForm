@@ -2,13 +2,12 @@ const body = document.querySelector("body");
 const container = document.querySelector(".container");
 const emailInput = document.querySelector(".emailInput");
 const passwordInput = document.querySelector(".passwordInput");
-
-let isDarkTheme = true;
-
 const user = {
   email: "",
   password: "",
 };
+
+let isDarkTheme = true;
 
 function saveUserData() {
   user.email = emailInput.value;
